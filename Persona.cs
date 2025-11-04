@@ -8,9 +8,13 @@ namespace B_U1_S1_G2_ES
 {
     public class Persona
     {
-        public string Name { get; set; }
-        public string LastName { get; set; }
-        public int Age { get; set; }
+
+        //Proprietà
+        private string Name { get; set; }
+        private string LastName { get; set; }
+        private int Age { get; set; }
+        
+        //Costruttore
         public Persona(string name, string lastname, int age)
         {
             Name = name;
@@ -18,6 +22,8 @@ namespace B_U1_S1_G2_ES
             Age = age;
         }
 
+
+        // Metodi
         public string GetName()
         {
             return Name;
@@ -30,7 +36,7 @@ namespace B_U1_S1_G2_ES
         {
             return Age;
         }
-        public void GetDetails()
+        public void PrintDetails()
         {
             Console.WriteLine($"il nome è {Name}, il cognome è {LastName} e l`età è {Age}");
         }

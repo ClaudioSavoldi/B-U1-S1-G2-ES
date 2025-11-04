@@ -7,4 +7,4 @@ Console.WriteLine(persona1.GetName());
 Console.WriteLine(persona1.GetLastname());
 Console.WriteLine(persona1.GetAge());
 
-persona1.GetDetails();
+persona1.PrintDetails();
